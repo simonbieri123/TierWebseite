@@ -1,0 +1,41 @@
+/* Basis */
+body { font-family: Arial, sans-serif; margin: 0; background: #fafafa; color: #222; }
+img { max-width: 100%; height: auto; display: block; }
+
+/* Header + Navi */
+.site-header { background: #ddd; border-bottom: 1px solid #bbb; padding: 10px; }
+.title { font-size: 20px; font-weight: bold; }
+.nav { margin-top: 6px; }
+.nav a { display: inline-block; padding: 6px 10px; text-decoration: none; color: #000; border: 1px solid #bbb; margin-right: 6px; background: #eee; }
+.nav a.active { background: #fff; }
+
+/* Seite */
+.container { max-width: 980px; margin: 12px auto; padding: 0 10px; }
+
+/* Top-Reihe: linke Infos + großes Bild */
+.top-row { display: flex; gap: 10px; }
+.info-column { width: 220px; }
+.info-box { background: #fff; border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; }
+.hero { flex: 1; border: 1px solid #ccc; background: #fff; padding: 10px; }
+
+/* Features */
+.features-row { display: flex; gap: 10px; margin: 12px 0; }
+.feature { flex: 1; border: 1px solid #ccc; background: #fff; padding: 10px; }
+.feature h2 { margin: 8px 0 6px; font-size: 18px; }
+
+/* Untere Kacheln */
+.bottom-cards { display: flex; gap: 10px; margin: 12px 0; }
+.card { flex: 1; border: 1px dashed #bbb; background: #fff; padding: 20px; text-align: center; }
+
+/* Über mich */
+.about-boxes { display: flex; gap: 10px; }
+.about-item { flex: 1; border: 1px solid #ccc; background: #fff; padding: 12px; }
+
+/* Footer */
+.site-footer { border-top: 1px solid #bbb; background: #eee; padding: 12px; text-align: center; font-size: 14px; }
+
+/* einfache Mobile-Anpassung */
+@media (max-width: 800px) {
+  .top-row, .features-row, .bottom-cards, .about-boxes { flex-direction: column; }
+  .info-column { width: 100%; }
+}
