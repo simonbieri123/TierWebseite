@@ -6,5 +6,9 @@ Die Zielgruppe dieser Tierwebseite ist für meine Klassenkameraden*innen oder de
 index.html ist die Startseite der Tierwebseite
 features.html kommen noch weitere besonderheiten 
 ueber-mich.html sind infos über mich (Kontakt)
+README.md diese Seite wie, wo, was
+
+Quellen der Bilder:
+
 
 Navigation sieht man im Kopfbereich und führt durch alle Seiten.
