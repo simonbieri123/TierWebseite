@@ -1,69 +1,244 @@
 /* Basis */
-body { font-family: Arial, sans-serif; margin: 0; background: #fafafa; color: #222; }
+
+body {
+
+  font-family: Arial, sans-serif;
+
+  margin: 0;
+
+  background: #faf8f3; /* warmes beige statt grau */
+
+  color: #222;
+
+}
+
 img { max-width: 100%; height: auto; display: block; }
 
 /* Header + Navi */
-.site-header { background: #ddd; border-bottom: 1px solid #bbb; padding: 10px; }
-.title { font-size: 20px; font-weight: bold; }
+
+.site-header {
+
+  background: #d9a441; /* sandbraun */
+
+  border-bottom: 3px solid #b07a2b;
+
+  padding: 10px;
+
+}
+
+.title { font-size: 22px; font-weight: bold; color: #fff; }
+
 .nav { margin-top: 6px; }
-.nav a { display: inline-block; padding: 6px 10px; text-decoration: none; color: #000; border: 1px solid #bbb; margin-right: 6px; background: #eee; }
-.nav a.active { background: #fff; }
+
+.nav a {
+
+  display: inline-block;
+
+  padding: 6px 12px;
+
+  text-decoration: none;
+
+  color: #fff;
+
+  border-radius: 5px;
+
+  margin-right: 6px;
+
+  background: #b07a2b;
+
+}
+
+.nav a.active {
+
+  background: #fff;
+
+  color: #b07a2b;
+
+  font-weight: bold;
+
+}
 
 /* Seite */
+
 .container { max-width: 980px; margin: 12px auto; padding: 0 10px; }
 
 /* Top-Reihe: linke Infos + großes Bild */
+
 .top-row { display: flex; gap: 10px; }
+
 .info-column { width: 260px; }
-.info-box { background: #fff; border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; }
-.hero { flex: 1; border: 1px solid #ccc; background: #fff; padding: 10px; }
+
+.info-box {
+
+  background: #fff6db; /* helles gelb */
+
+  border: 1px solid #e0c35c;
+
+  padding: 10px;
+
+  margin-bottom: 10px;
+
+  border-radius: 6px;
+
+}
+
+.hero {
+
+  flex: 1;
+
+  border: 2px solid #d9a441;
+
+  background: #fff;
+
+  padding: 10px;
+
+}
 
 /* Intro & Fakten */
-.intro { background: #fff; border: 1px solid #ccc; padding: 12px; margin: 12px 0; }
+
+.intro {
+
+  background: #fff;
+
+  border: 2px solid #d9a441;
+
+  padding: 12px;
+
+  margin: 12px 0;
+
+  border-radius: 8px;
+
+}
+
 .fact-list { margin: 8px 0 0 16px; }
 
 /* Features */
+
 .features-row { display: flex; gap: 10px; margin: 12px 0; }
-.feature { flex: 1; border: 1px solid #ccc; background: #fff; padding: 10px; }
-.feature h2 { margin: 8px 0 6px; font-size: 18px; }
-.extra-note { background: #fff; border: 1px solid #ccc; padding: 12px; }
+
+.feature {
+
+  flex: 1;
+
+  border: 2px solid #b07a2b;
+
+  background: #fffef5;
+
+  padding: 10px;
+
+  border-radius: 8px;
+
+}
+
+.feature h2 { margin: 8px 0 6px; font-size: 18px; color: #b07a2b; }
+
+.extra-note {
+
+  background: #fff6db;
+
+  border: 2px solid #d9a441;
+
+  padding: 12px;
+
+  border-radius: 8px;
+
+}
+
+/* Tabelle */
+
+.table-section table {
+
+  width: 100%;
+
+  border-collapse: collapse;
+
+  margin: 15px 0;
+
+  background: #fff;
+
+}
+
+.table-section th {
+
+  background: #f2c94c; /* kräftiges Gelb */
+
+  color: #222;
+
+  padding: 8px;
+
+  border: 1px solid #ccc;
+
+}
+
+.table-section td {
+
+  padding: 8px;
+
+  border: 1px solid #ccc;
+
+}
+
+/* Karte */
+
+.map-section {
+
+  background: #eaf6ff; /* hellblau */
+
+  border: 2px solid #8bbde4;
+
+  padding: 12px;
+
+  margin-top: 20px;
+
+  border-radius: 8px;
+
+}
+
+.map-section h2 { margin-top: 0; }
 
 /* Über mich */
+
 .about-boxes { display: flex; gap: 10px; margin-bottom: 12px; }
-.about-item { flex: 1; border: 1px solid #ccc; background: #fff; padding: 12px; }
+
+.about-item {
+
+  flex: 1;
+
+  border: 2px solid #d9a441;
+
+  background: #fffef5;
+
+  padding: 12px;
+
+  border-radius: 8px;
+
+}
 
 /* Footer */
-.site-footer { border-top: 1px solid #bbb; background: #eee; padding: 12px; text-align: center; font-size: 14px; }
+
+.site-footer {
+
+  border-top: 3px solid #b07a2b;
+
+  background: #d9a441;
+
+  padding: 12px;
+
+  text-align: center;
+
+  font-size: 14px;
+
+  color: #fff;
+
+}
 
 /* einfache Mobile-Anpassung */
+
 @media (max-width: 800px) {
+
   .top-row, .features-row, .about-boxes { flex-direction: column; }
+
   .info-column { width: 100%; }
-}
 
-/* Tabelle (sanfte Farbe) */
-.table-section table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 15px 0;
-  background: #fff;
 }
-.table-section th {
-  background: #f2c94c; /* leichtes Gelb */
-  color: #222;
-  padding: 8px;
-  border: 1px solid #ccc;
-}
-.table-section td {
-  padding: 8px;
-  border: 1px solid #ccc;
-}
-
-/* Karte in hellem Kasten */
-.map-section {
-  background: #eaf6ff; /* hellblau */
-  border: 1px solid #bbb;
-  padding: 12px;
-  margin: 16px 0 24px;
-}
-.map-section h2 { margin-top: 0; }
+ 
