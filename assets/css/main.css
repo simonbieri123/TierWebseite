@@ -40,3 +40,30 @@ img { max-width: 100%; height: auto; display: block; }
   .top-row, .features-row, .about-boxes { flex-direction: column; }
   .info-column { width: 100%; }
 }
+
+/* Tabelle (sanfte Farbe) */
+.table-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+  background: #fff;
+}
+.table-section th {
+  background: #f2c94c; /* leichtes Gelb */
+  color: #222;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+.table-section td {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Karte in hellem Kasten */
+.map-section {
+  background: #eaf6ff; /* hellblau */
+  border: 1px solid #bbb;
+  padding: 12px;
+  margin: 16px 0 24px;
+}
+.map-section h2 { margin-top: 0; }
